@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AD1AA5C719FD03C600C48D73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1AA5C619FD03C600C48D73 /* main.m */; };
+		AD1AA5CF19FD06D400C48D73 /* readline.c in Sources */ = {isa = PBXBuildFile; fileRef = AD1AA5CE19FD06D400C48D73 /* readline.c */; };
+		AD31FB6619FD07F700EB7CDD /* security.c in Sources */ = {isa = PBXBuildFile; fileRef = AD31FB6519FD07F700EB7CDD /* security.c */; };
+		AD31FB7019FD0D6500EB7CDD /* secErrorStr.c in Sources */ = {isa = PBXBuildFile; fileRef = AD31FB6F19FD0D6500EB7CDD /* secErrorStr.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,20 @@
 /* Begin PBXFileReference section */
 		AD1AA5C319FD03C600C48D73 /* create-keychain */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "create-keychain"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD1AA5C619FD03C600C48D73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD1AA5CD19FD06A300C48D73 /* readline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = readline.h; sourceTree = "<group>"; };
+		AD1AA5CE19FD06D400C48D73 /* readline.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = readline.c; sourceTree = "<group>"; };
+		AD1AA5D019FD071C00C48D73 /* security.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = security.h; sourceTree = "<group>"; };
+		AD31FB6519FD07F700EB7CDD /* security.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = security.c; sourceTree = "<group>"; };
+		AD31FB6719FD091B00EB7CDD /* secerr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secerr.h; sourceTree = "<group>"; };
+		AD31FB6819FD095B00EB7CDD /* prerror.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prerror.h; sourceTree = "<group>"; };
+		AD31FB6919FD09B400EB7CDD /* prtypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prtypes.h; sourceTree = "<group>"; };
+		AD31FB6A19FD09DC00EB7CDD /* prcpucfg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prcpucfg.h; sourceTree = "<group>"; };
+		AD31FB6B19FD0A4100EB7CDD /* protypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = protypes.h; sourceTree = "<group>"; };
+		AD31FB6C19FD0A9200EB7CDD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AD31FB6E19FD0B2600EB7CDD /* prerr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = prerr.h; path = "../../../Downloads/Security-55471.14.18/libsecurity_asn1/lib/prerr.h"; sourceTree = "<group>"; };
+		AD31FB6F19FD0D6500EB7CDD /* secErrorStr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = secErrorStr.c; sourceTree = "<group>"; };
+		AD31FBBF19FD1CD200EB7CDD /* cspclient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cspclient.h; sourceTree = "<group>"; };
+		AD31FBC019FD1ED400EB7CDD /* seccfobject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = seccfobject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +58,7 @@
 		AD1AA5BA19FD03C600C48D73 = {
 			isa = PBXGroup;
 			children = (
+				AD31FB6C19FD0A9200EB7CDD /* Security.framework */,
 				AD1AA5C519FD03C600C48D73 /* create-keychain */,
 				AD1AA5C419FD03C600C48D73 /* Products */,
 			);
@@ -57,7 +75,20 @@
 		AD1AA5C519FD03C600C48D73 /* create-keychain */ = {
 			isa = PBXGroup;
 			children = (
+				AD1AA5CE19FD06D400C48D73 /* readline.c */,
+				AD31FB6719FD091B00EB7CDD /* secerr.h */,
+				AD31FB6F19FD0D6500EB7CDD /* secErrorStr.c */,
+				AD31FB6B19FD0A4100EB7CDD /* protypes.h */,
+				AD31FBBF19FD1CD200EB7CDD /* cspclient.h */,
+				AD31FB6819FD095B00EB7CDD /* prerror.h */,
+				AD31FB6E19FD0B2600EB7CDD /* prerr.h */,
+				AD31FB6A19FD09DC00EB7CDD /* prcpucfg.h */,
+				AD31FBC019FD1ED400EB7CDD /* seccfobject.h */,
+				AD31FB6919FD09B400EB7CDD /* prtypes.h */,
+				AD1AA5D019FD071C00C48D73 /* security.h */,
+				AD31FB6519FD07F700EB7CDD /* security.c */,
 				AD1AA5C619FD03C600C48D73 /* main.m */,
+				AD1AA5CD19FD06A300C48D73 /* readline.h */,
 			);
 			path = "create-keychain";
 			sourceTree = "<group>";
@@ -118,7 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD31FB7019FD0D6500EB7CDD /* secErrorStr.c in Sources */,
+				AD31FB6619FD07F700EB7CDD /* security.c in Sources */,
 				AD1AA5C719FD03C600C48D73 /* main.m in Sources */,
+				AD1AA5CF19FD06D400C48D73 /* readline.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +236,10 @@
 		AD1AA5CB19FD03C600C48D73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"/Users/ilianiliev/Downloads/Security-55471.14.18",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -232,6 +270,7 @@
 				AD1AA5CC19FD03C600C48D73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
